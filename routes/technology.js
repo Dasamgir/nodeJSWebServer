@@ -1,3 +1,5 @@
+//const connection = require("../mysql.conf").connection;
+
 const express = require('express');
 const app = express();
 

@@ -17,3 +17,8 @@ app.use(require('./routes/index'));
 app.listen(port, function () {
   console.log(`El super badass web server está escuchando por el puerto ${port}`);
 });
+
+//uso de proyecto conexion con mySql
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json());
